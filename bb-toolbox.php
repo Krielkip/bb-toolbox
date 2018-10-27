@@ -187,12 +187,14 @@ final class BB_Addon_Toolbox
 
                 // Functions to detect.
                 'functions' => array(
-                    'genesis_constants'
+                    'genesis_constants',
+                    'seopress_init' // SeoPress
                 ),
 
                 // Constants to detect.
                 'constants' => array(
                     'WPSEO_VERSION',
+                    'SEOPRESS_VERSION' //SeoPress
                 ),
             )
         )
@@ -226,6 +228,9 @@ final class BB_Addon_Toolbox
             //  Genesis + SEO Framework
             $meta_title_field = '_genesis_title';
             $meta_description_field = '_genesis_description';
+        } else if ( self::has_seo_plugin(array('functions' => array('seopress_init'), 'constants' => array('SEOPRESS_VERSION') ))) {
+            $meta_title_field = '_seopress_titles_title';
+            $meta_description_field = '_seopress_titles_desc';
         }
 
         $meta_title = get_post_meta($post->ID, $meta_title_field, true);
