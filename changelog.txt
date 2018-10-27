@@ -1,0 +1,4 @@
+== 1.0.0 ==
+*   Release date: April 13, 2018
+*   Initial Release
+*   Good Friday...
