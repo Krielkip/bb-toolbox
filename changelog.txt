@@ -1,3 +1,8 @@
+== 1.0.1 ==
+*   Release date: October 27, 2018
+*   Added support for wp-seopress plugin
+*   Added this plugin on github.com / https://github.com/Krielkip/bb-toolbox/
+
 == 1.0.0 ==
 *   Release date: April 13, 2018
 *   Initial Release

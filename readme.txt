@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 = What Is This Toolbox Addon for Beaver Builder? =
 
 The Toolbox addon is build for Beaver Builder so you can edit the page title, page permalink, page parent & page template, without going back to the Wordpress "back-end"
-Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework or Genesis)
+Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework, SEOPress or Genesis)
 Tested and worked on Beaver Builder 2.x.
 Does not work on Version 1.x. Use [Thierry Pigot Beaver Builder Toolbox](https://github.com/thierrypigot/beaver-builder-toolbox) instead.
 
