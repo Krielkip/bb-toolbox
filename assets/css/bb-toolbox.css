@@ -1,6 +1,19 @@
 #fl-field-bb-toolbox-type-seo,
 #fl-field-bb-toolbox-can-parent,
-#fl-field-bb-toolbox-has-templates {
+#fl-field-bb-toolbox-has-templates,
+#fl-field-bb-toolbox-has-post-thumbnails {
     display: none;
 }
 
+#fl-field-post_featuredImage select,
+#fl-field-post_featuredImage .fl-photo-preview-filename {
+    display: none !important;
+}
+
+#fl-field-post_featuredImage .fl-photo-preview-filename {
+    display: inline-block;
+    word-break: break-all;
+}
+#fl-field-post_featuredImage .fl-photo-field.fl-photo-no-attachment .fl-photo-edit  {
+     display: inline;
+}

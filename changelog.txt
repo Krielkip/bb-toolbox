@@ -1,3 +1,10 @@
+== 1.1.0 ==
+*   Release date: December 3, 2018
+*   Added support for Featured Image
+*   Bugfix: maxlength on field meta_title & meta_description
+*   Bugfix: redirect on every save.
+*   ToDo: Find a solution to update the page / section for title & featured image. See: GitHub ticket: https://github.com/Krielkip/bb-toolbox/issues/3
+
 == 1.0.1 ==
 *   Release date: October 27, 2018
 *   Added support for wp-seopress plugin

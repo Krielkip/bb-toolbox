@@ -29,8 +29,9 @@ Install Toolbox for Beaver Builder either via the WordPress plugin directory or 
 
 == Frequently Asked Questions ==
 
-For information on using Toolbox for Beaver Builder, please ask on the Wordpress forum or on the Slack of Beaver Builder.
+For information on using Toolbox for Beaver Builder, please ask on the Wordpress forum, github or on the Slack of Beaver Builder.
 
+At this moment there is no visual update when you save a new featured image or changing the page title. Please visit this [Github issue](https://github.com/Krielkip/bb-toolbox/issues/3) for more information
 
 == Credits ==
 
