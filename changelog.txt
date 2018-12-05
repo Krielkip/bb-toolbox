@@ -1,3 +1,9 @@
+== 1.1.1 ==
+*   Release date: December 5, 2018
+*   Update: Meta Description is now a TextArea
+*   Bugfix: Wrong value in help
+*   Known Issue: Textarea does not have a limit build in Beaver Builder. An update to the field has been submitted.
+
 == 1.1.0 ==
 *   Release date: December 3, 2018
 *   Added support for Featured Image

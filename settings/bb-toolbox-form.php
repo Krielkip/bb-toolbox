@@ -122,15 +122,16 @@ FLBuilder::register_settings_form('bb_toolbox_form', array(
               'default' => '',
               'maxlength' => '60',
               'size' => '30',
-              'help' => __('Max input value is 30 characters.', 'bb-toolbox')
+              'help' => __('Max input value is 60 characters.', 'bb-toolbox')
 
             ),
             'meta_description' => array(
-              'type' => 'text',
+              'type' => 'textarea',
               'label' => __('Meta description', 'bb-toolbox'),
               'default' => '',
               'maxlength' => '160',
               'size' => '30',
+              'rows' => '6',
               'help' => __('Max input value is 160 characters.', 'bb-toolbox')
             ),
           ),

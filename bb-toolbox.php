@@ -3,7 +3,7 @@
  * Plugin Name: Toolbox for Beaver Builder
  * Plugin URI: http://www.particulare.nl
  * Description: Adds the toolbox to the Page Builder of Beaver Builder (lite). You can edit the page title, page permalink, page parent & page template. Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework or Genesis)
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Jack Krielen
  * Author URI: http://www.jackkrielen.nl
  * Copyright: (c) 2018 Particulare

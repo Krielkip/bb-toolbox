@@ -21,6 +21,11 @@ Does not work on Version 1.x. Use [Thierry Pigot Beaver Builder Toolbox](https:/
 1. Buttin to open the toolbox
 2. Form to edit the page settings
 
+== Video ==
+
+What says more then words? A youtube video! David Waumsley did one video about version 1.1.0.
+[youtube http://www.youtube.com/watch?v=WHHSKri7quw ]
+
 == Installation ==
 
 Install Toolbox for Beaver Builder either via the WordPress plugin directory or by uploading the files to your server at wp-content/plugins. Then activate it and go in to the Beaver Builder Front End editor.
@@ -39,3 +44,4 @@ This plugin: Jack Krielen
 Based on plugin: [Thierry Pigot Beaver Builder Toolbox](https://github.com/thierrypigot/beaver-builder-toolbox) by Thierry Pigot
 Beaver Builder: [Beaver Builder page Builder](https://www.wpbeaverbuilder.com/)
 Beaver Image: [Hand painted beaver by ajipebriana / Freepik](https://www.freepik.com/free-vector/hand-painted-beaver-design_975547.htm)
+Youtube Video: [David Waumsley](https://www.youtube.com/watch?v=WHHSKri7quw)
