@@ -2,7 +2,7 @@
 Contributors: krielkip
 Tags: beaver builder, beaver, beaver builder permalink, beaver title, page title, builder free, beaver addons, beaver builder addon, beaver builder add ons, beaver builder lite, beaver builder addons, beaver builder extensions, beaver addon, beaver builder plugin, beaver builder wordpress
 Requires at least: 4.9
-Tested up to: 4.9
+Tested up to: 5.2
 Stable tag: trunk
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,13 +12,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 = What Is This Toolbox Addon for Beaver Builder? =
 
 The Toolbox addon is build for Beaver Builder so you can edit the page title, page permalink, page parent & page template, without going back to the Wordpress "back-end"
-Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework, SEOPress or Genesis)
+Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework, SEOPress, SmartCrawl (Pro) or Genesis)
 Tested and worked on Beaver Builder 2.x.
 Does not work on Version 1.x. Use [Thierry Pigot Beaver Builder Toolbox](https://github.com/thierrypigot/beaver-builder-toolbox) instead.
 
 == Screenshots ==
 
-1. Buttin to open the toolbox
+1. Button to open the toolbox
 2. Form to edit the page settings
 
 == Video ==

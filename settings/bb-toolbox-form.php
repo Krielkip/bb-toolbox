@@ -6,7 +6,7 @@
  * Register the Settings form for the Toolbox.
  */
 FLBuilder::register_settings_form('bb_toolbox_form', array(
-  'title' => __('Toolbox', 'bb-toolbox'),
+  'title' => __('Page / Post Config', 'bb-toolbox'),
   'tabs' => array(
     'general' => array( // Tab
       'title' => __('Post / Page settings', 'bb-toolbox'), // Tab title

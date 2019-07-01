@@ -1,3 +1,11 @@
+== 1.1.2 ==
+*   Release date: July 1, 2019
+*   Update: Renamed the button from Toolbox to settings / config
+*   Bugfix / refactor: Logic for plugin connection
+*   Bugfix: Type error on class button.
+*   Added support for WPMU SmartCrawl Pro SEO
+*   ToDo: Improvement on UX to relocate the button. See: GitHub ticket: https://github.com/Krielkip/bb-toolbox/issues/5
+
 == 1.1.1 ==
 *   Release date: December 5, 2018
 *   Update: Meta Description is now a TextArea
