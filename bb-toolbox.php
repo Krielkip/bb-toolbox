@@ -143,7 +143,8 @@ final class BB_Addon_Toolbox
                 // Constants to detect.
                 'constants' => array(
                     'WPSEO_VERSION',
-                    'SEOPRESS_VERSION' //SeoPress
+                    'SEOPRESS_VERSION', //SeoPress
+                    'THE_SEO_FRAMEWORK_VERSION' // SEO Framework
                 ),
             )
         )
@@ -194,6 +195,10 @@ final class BB_Addon_Toolbox
         } else if (self::has_seo_plugin(array('classes' => array('Smartcrawl_Init')))) {
             $meta_title_field = '_wds_title';
             $meta_description_field = '_wds_metadesc';
+        } else if ( self::has_seo_plugin(array('constants' => array('THE_SEO_FRAMEWORK_VERSION'))))
+        {
+            $meta_title_field = '_genesis_title';
+            $meta_description_field = '_genesis_description';
         }
 
         $meta_title = get_post_meta($post->ID, $meta_title_field, TRUE);
