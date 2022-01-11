@@ -2,7 +2,7 @@
 Contributors: krielkip
 Tags: beaver builder, beaver, beaver builder permalink, beaver title, page title, builder free, beaver addons, beaver builder addon, beaver builder add ons, beaver builder lite, beaver builder addons, beaver builder extensions, beaver addon, beaver builder plugin, beaver builder wordpress
 Requires at least: 4.9
-Tested up to: 5.2
+Tested up to: 5.8
 Stable tag: trunk
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,25 @@ Does not work on Version 1.x. Use [Thierry Pigot Beaver Builder Toolbox](https:/
 1. Button to open the toolbox
 2. Form to edit the page settings
 
+== Features ==
+* Edit Page / Post Title
+* Edit Page / Post Slug
+* Edit Page / Post template
+* Edit Parent Page / Post
+* Edit Featured Image
+* Edit Meta Title (Only with Supported SEO Tools)
+* Edit Meta Description (Only with Supported SEO Tools)
+
+== Supported SEO Tools ==
+* WordPress SEO 
+* All in one SEO
+* HeadSpace2 SEO
+* Platinum SEO Pack
+* The SEO Framework
+* SEOPress
+* SmartCrawl (Pro) 
+* Genesis
+
 == Video ==
 
 What says more then words? A youtube video! David Waumsley did one video about version 1.1.0.
@@ -31,6 +50,8 @@ What says more then words? A youtube video! David Waumsley did one video about v
 Install Toolbox for Beaver Builder either via the WordPress plugin directory or by uploading the files to your server at wp-content/plugins. Then activate it and go in to the Beaver Builder Front End editor.
 
 1, 2, 3: You're done!
+
+This plugin does not add any tables or fields. This plugin only uses the Beaver Builder module, Supported SEO modules and Wordpress. 
 
 == Frequently Asked Questions ==
 
