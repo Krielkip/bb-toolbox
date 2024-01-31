@@ -1,5 +1,4 @@
-(function ($) {
-
+(function ($,FLBuilder) {
     BBToolbox = {
 
         _cbVal: [],
@@ -24,11 +23,14 @@
          * @method _bindEvents
          */
         _bindEvents: function () {
-            $('body').delegate('.fl-builder-bar-actions .fl-builder-toolbox-button', 'click', BBToolbox._openToolboxPanelClicked);
-            $('body').delegate('.fl-builder-toolbox-settings .fl-builder-settings-save', 'click', BBToolbox._saveToolboxPanelClicked);
+            this.$defaultBarButtons = $('.fl-builder-bar-actions', window.parent.document);
+            this.$bbToolBoxBtn = this.$defaultBarButtons.find('.fl-builder-toolbox-button');
+            this.$bbToolBoxBtn.on('click', this._openToolboxPanelClicked.bind(this));
+
+            $('body', window.parent.document).on( 'click', '.fl-builder-toolbox-settings .fl-builder-settings-save', this._saveToolboxPanelClicked);
         },
 
-        _openToolboxPanelClicked: function () {
+        _openToolboxPanelClicked: function () {;
             FLBuilderSettingsForms.render({
                 id: 'bb_toolbox_form',
                 className: 'fl-builder-toolbox-settings',
@@ -68,6 +70,9 @@
         }
     };
 
-    BBToolbox._init();
+    $(function() {
+        BBToolbox._init();
+    });
 
-})(jQuery);
+
+})(jQuery,FLBuilder);

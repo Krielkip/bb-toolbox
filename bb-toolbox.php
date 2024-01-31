@@ -3,7 +3,7 @@
  * Plugin Name: Toolbox for Beaver Builder
  * Plugin URI: http://www.particulare.nl
  * Description: Adds the toolbox to the Page Builder of Beaver Builder (lite). You can edit the page title, page permalink, page parent & page template. Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework or Genesis)
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: Jack Krielen
  * Author URI: http://www.jackkrielen.nl
  * Copyright: (c) 2018 Particulare
@@ -339,8 +339,8 @@ final class BB_Addon_Toolbox
     public function load_scripts()
     {
         if (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active()) {
-            wp_enqueue_script('bb-toolbox', BB_Toolbox_URL . 'assets/js/bb-toolbox.js', array('jquery'), rand(), TRUE);
-            wp_enqueue_style('bb-toolbox', BB_Toolbox_URL . 'assets/css/bb-toolbox.css');
+            wp_enqueue_script('bb-toolbox-js', BB_Toolbox_URL . 'assets/js/bb-toolbox.js', array('jquery', 'fl-builder'));
+            wp_enqueue_style('bb-toolbox-css', BB_Toolbox_URL . 'assets/css/bb-toolbox.css');
         }
     }
 

@@ -2,7 +2,7 @@
 Contributors: krielkip
 Tags: beaver builder, beaver, beaver builder permalink, beaver title, page title, builder free, beaver addons, beaver builder addon, beaver builder add ons, beaver builder lite, beaver builder addons, beaver builder extensions, beaver addon, beaver builder plugin, beaver builder wordpress
 Requires at least: 4.9
-Tested up to: 5.8
+Tested up to: 6.4
 Stable tag: trunk
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
