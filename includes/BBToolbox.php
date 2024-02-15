@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * ToDo:
+ * - Rebuild BB-Toolbox.php
+ * - Add Plugin https://wordpress.org/plugins/excerpt-editor-for-beaver-builder/ in to this plugin (and making it EOL)
+ * - Add Easy Plugin support for more modules
+ * - Add Support for additional settings
+ * - Add Support for Location for UI button. (and shorter name or just a icon.. i prefer the icon <3)
+ * - Test it on the new BeaverBuilder
+ * - Bake a cake.
+ */
+
 class BBToolbox
 {
 
