@@ -1,7 +1,8 @@
 <?php
 /**
+ * @wordpress-plugin
  * Plugin Name: Toolbox for Beaver Builder
- * Plugin URI: http://www.particulare.nl
+ * Plugin URI: https://wordpress.org/plugins/bb-toolbox/
  * Description: Adds the toolbox to the Page Builder of Beaver Builder (lite). You can edit the page title, page permalink, page parent & page template. Also you can edit SEO Title + SEO Description  (WordPress SEO, All in one SEO, HeadSpace2 SEO, Platinum SEO Pack, SEO Framework or Genesis)
  * Version: 1.1.5
  * Author: Jack Krielen
@@ -14,13 +15,44 @@
  */
 
 // Exit if accessed directly.
-if (!defined('ABSPATH')) {
+if (!defined('ABSPATH') || ! defined( 'WPINC' )) {
     exit;
 }
 
-final class BB_Addon_Toolbox
-{
 
+define( 'BBTOOLBOX_VERSION', '2.0.0' );
+
+/**
+ * @return void
+ */
+function activate_BBToolbox() {
+    require_once plugin_dir_path( __FILE__ ) . 'includes/settings/BBToolbox_SettingButtonLocation.php';
+    BBToolbox_SettingButtonLocation::activate();
+}
+
+/**
+ * @return void
+ */
+function deactivate_BBToolbox() {
+    require_once plugin_dir_path( __FILE__ ) . 'includes/settings/BBToolbox_SettingButtonLocation.php';
+    BBToolbox_SettingButtonLocation::uninstall();
+}
+
+register_activation_hook( __FILE__, 'activate_BBToolbox' );
+register_deactivation_hook( __FILE__, 'deactivate_BBToolbox' );
+
+function run_BBToolbox() {
+
+    $BBToolbox = new BBToolbox();
+    $BBToolbox->run();
+
+}
+run_BBToolbox();
+
+
+// Old Code:
+final class BBToolbox
+{
     /**
      * Holds the class object.
      *
@@ -36,27 +68,11 @@ final class BB_Addon_Toolbox
      */
     public function __construct()
     {
-        /* Constants */
-        $this->define_constants();
-
 
         /* Hooks */
         $this->init_hooks();
-
     }
 
-    /**
-     * Define BB Addons constants.
-     *
-     * @since 1.0.0
-     * @return void
-     */
-    private function define_constants()
-    {
-        define('BB_Toolbox_DIR', plugin_dir_path(__FILE__));
-        define('BB_Toolbox_URL', plugins_url('/', __FILE__));
-        define('BB_Toolbox_PATH', plugin_basename(__FILE__));
-    }
 
     /**
      * Initializes actions and filters.
@@ -67,7 +83,6 @@ final class BB_Addon_Toolbox
     public function init_hooks()
     {
         add_action('init', array($this, 'load_toolbox'));
-        add_action('plugins_loaded', array($this, 'loader'));
         add_action('wp_enqueue_scripts', array($this, 'load_scripts'), 100);
         add_action('admin_notices', array($this, 'admin_notices'));
         add_action('network_admin_notices', array($this, 'admin_notices'));
@@ -305,31 +320,6 @@ final class BB_Addon_Toolbox
     }
 
     /**
-     * Include row and column setting extendor.
-     *
-     * @since 1.0.0
-     * @return void
-     */
-    public function loader()
-    {
-        if (class_exists('FLBuilder')) {
-
-            $this->load_textdomain();
-        }
-    }
-
-    /**
-     * Load language files.
-     *
-     * @since 1.0.0
-     * @return void
-     */
-    public function load_textdomain()
-    {
-        load_plugin_textdomain('bb-toolbox', FALSE, basename(dirname(__FILE__)) . '/languages/');
-    }
-
-    /**
      * Load in excerpt JS.
      *
      * @since 1.0.0
@@ -339,8 +329,8 @@ final class BB_Addon_Toolbox
     public function load_scripts()
     {
         if (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active()) {
-            wp_enqueue_script('bb-toolbox-js', BB_Toolbox_URL . 'assets/js/bb-toolbox.js', array('jquery'));
-            wp_enqueue_style('bb-toolbox-css', BB_Toolbox_URL . 'assets/css/bb-toolbox.css');
+            wp_enqueue_script('bb-toolbox-js', plugins_url('/', __FILE__) . 'admin/js/bb-toolbox.js', array('jquery'));
+            wp_enqueue_style('bb-toolbox-css', plugins_url('/', __FILE__) . 'admin/css/bb-toolbox.css');
         }
     }
 
@@ -618,5 +608,4 @@ final class BB_Addon_Toolbox
     }
 }
 
-// Load the PowerPack class.
-$bb_addon_toolbox = BB_Addon_Toolbox::get_instance();
+$BBToolbox = BBToolbox::get_instance();
