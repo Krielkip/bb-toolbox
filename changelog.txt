@@ -1,4 +1,8 @@
 == 1.1.4 ==
+*   Release date: February 15, 2024
+*   Fix the Fix for the Beaver Builder Update 2.7.4.4
+
+== 1.1.4 ==
 *   Release date: January 31, 2024
 *   Updated Wordpress Version
 *   Fix for the Beaver Builder Update.
